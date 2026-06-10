@@ -98,13 +98,12 @@ export const sumaArray = (numeros) => {
 // Un array vacío devuelve true (ninguno incumple la regla).
 // Ejemplos: todosPositivos([1, 2, 3]) -> true,  todosPositivos([1, -2, 3]) -> false
 export const todosPositivos = (numeros) => {
-  const negativoCheck = numeros.find(numero => numero <= 0)
+  const negativoCheck = numeros.every(numero => numero > 0)
   console.log(negativoCheck)
-  if(negativoCheck <= 0){
-    return false
-  }else{
+  if(negativoCheck){
     return true
+  }else{
+    return false
   }
 };
 
-todosPositivos([1, 2])
