@@ -1,0 +1,12 @@
+{
+  "name": "diagnostico-logica-js",
+  "version": "1.0.0",
+  "description": "Diagnóstico individual de lógica JS: ¿saben enfrentarse a un ejercicio por sí mismos?",
+  "type": "module",
+  "scripts": {
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.9"
+  }
+}
