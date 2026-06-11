@@ -64,7 +64,7 @@ export const nombres = (personas) => {
 // Ejemplo: mayoresDeEdad([{ nombre: "Ada", edad: 30 }, { nombre: "Leo", edad: 15 }])
 //          -> [{ nombre: "Ada", edad: 30 }]
 export const mayoresDeEdad = (personas) => {
-  // TODO
+  return personas.filter(persona => persona.edad >= 18)
 };
 
 // 8 · buscarPorId(productos, id)
