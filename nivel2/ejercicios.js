@@ -39,7 +39,7 @@ export const nombreValido = (nombre) => {
 // Devuelve el coste de envío: 0 si el total es 50 o más (envío gratis), y 5 si es menos.
 // Ejemplos: precioEnvio(50) -> 0,  precioEnvio(49) -> 5
 export const precioEnvio = (total) => {
-
+  return total >= 50 ? 0 : 5
 };
 
 // 6 · totalCarrito(precio, cantidad)
