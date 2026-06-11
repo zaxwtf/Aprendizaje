@@ -63,7 +63,7 @@ export const inicialMayuscula = (palabra) => {
 // Recibe un array de números y devuelve un ARRAY NUEVO solo con los pares.
 // Ejemplos: soloPares([1, 2, 3, 4]) -> [2, 4],  soloPares([1, 3, 5]) -> []
 export const soloPares = (numeros) => {
-  // TODO
+  return numeros.filter(numero => numero % 2 === 0)
 };
 
 // 9 · dobles(numeros)
