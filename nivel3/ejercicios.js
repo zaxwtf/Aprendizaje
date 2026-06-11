@@ -36,7 +36,7 @@ export const presentacion = (persona) => {
 // Ejemplos: disponible({ activo: true, stock: 5 }) -> true
 //           disponible({ activo: true, stock: 0 }) -> false
 export const disponible = (producto) => {
-  // TODO
+  return producto.activo === true && producto.stock > 0 ? true : false
 };
 
 // 5 · precioRebajado(producto)
@@ -45,7 +45,7 @@ export const disponible = (producto) => {
 // Ejemplos: precioRebajado({ precio: 100, oferta: true }) -> 90
 //           precioRebajado({ precio: 100, oferta: false }) -> 100
 export const precioRebajado = (producto) => {
-  // TODO
+  
 };
 
 // 6 · nombres(personas)
