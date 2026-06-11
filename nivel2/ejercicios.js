@@ -70,7 +70,7 @@ export const soloPares = (numeros) => {
 // Recibe un array de números y devuelve un ARRAY NUEVO con cada número multiplicado por 2.
 // Ejemplos: dobles([1, 2, 3]) -> [2, 4, 6],  dobles([]) -> []
 export const dobles = (numeros) => {
-  // TODO
+  return numeros.map(numero => numero * 2)
 };
 
 // 10 · cuentaAprobados(notas)
