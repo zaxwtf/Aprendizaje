@@ -28,15 +28,16 @@ export const ordenarPorEdad = (usuarios) => {
 // Ejemplo: nombresActivosOrdenados([{ nombre: "Sara", activo: true }, { nombre: "Ana", activo: true }])
 //          -> ["Ana", "Sara"]
 export const nombresActivosOrdenados = (usuarios) => {
-  
+  return usuarios.filter(usuario => usuario.activo === true).map(usuario => usuario.nombre).sort()
 };
+
 
 // 4 · usuarioMasJoven(usuarios)
 // Devuelve el objeto del usuario con menor edad. (Siempre hay al menos uno.)
 // Ejemplo: usuarioMasJoven([{ nombre: "Ana", edad: 30 }, { nombre: "Leo", edad: 18 }])
 //          -> { nombre: "Leo", edad: 18 }
 export const usuarioMasJoven = (usuarios) => {
-  // TODO
+  return usuarios.sort((a, b) => a.edad - b.edad)[0]
 };
 
 // 5 · precioMaximo(productos)
