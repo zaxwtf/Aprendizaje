@@ -45,15 +45,17 @@ export const disponible = (producto) => {
 // Ejemplos: precioRebajado({ precio: 100, oferta: true }) -> 90
 //           precioRebajado({ precio: 100, oferta: false }) -> 100
 export const precioRebajado = (producto) => {
-  
+  return producto.oferta === true ? (producto.precio) - 10 : producto.precio
 };
+
+precioRebajado({precio: 50, oferta: true})
 
 // 6 · nombres(personas)
 // personas es un ARRAY de objetos como [{ nombre: "Ada" }, { nombre: "Leo" }].
 // Devuelve un array con SOLO los nombres.
 // Ejemplo: nombres([{ nombre: "Ada" }, { nombre: "Leo" }]) -> ["Ada", "Leo"]
 export const nombres = (personas) => {
-  // TODO
+  
 };
 
 // 7 · mayoresDeEdad(personas)
