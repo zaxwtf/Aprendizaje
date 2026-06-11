@@ -1,0 +1,12 @@
+{
+  "name": "diagnostico-logica-js-nivel2",
+  "version": "1.0.0",
+  "description": "Diagnóstico de lógica JS, nivel 2: un peldaño por encima del nivel 1.",
+  "type": "module",
+  "scripts": {
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.8"
+  }
+}
