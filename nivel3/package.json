@@ -1,0 +1,12 @@
+{
+  "name": "diagnostico-logica-js-nivel3",
+  "version": "1.0.0",
+  "description": "Diagnóstico de lógica JS, nivel 3: objetos y arrays de objetos (forma de Mongo).",
+  "type": "module",
+  "scripts": {
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.8"
+  }
+}
