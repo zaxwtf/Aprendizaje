@@ -19,7 +19,7 @@ export const nombresActivos = (usuarios) => {
 // Ejemplo: ordenarPorEdad([{ nombre: "Ana", edad: 30 }, { nombre: "Leo", edad: 18 }])
 //          -> [{ nombre: "Leo", edad: 18 }, { nombre: "Ana", edad: 30 }]
 export const ordenarPorEdad = (usuarios) => {
-  // TODO
+  return usuarios.sort((a, b) => a.edad - b.edad)
 };
 
 // 3 · nombresActivosOrdenados(usuarios)
@@ -28,7 +28,7 @@ export const ordenarPorEdad = (usuarios) => {
 // Ejemplo: nombresActivosOrdenados([{ nombre: "Sara", activo: true }, { nombre: "Ana", activo: true }])
 //          -> ["Ana", "Sara"]
 export const nombresActivosOrdenados = (usuarios) => {
-  // TODO
+  
 };
 
 // 4 · usuarioMasJoven(usuarios)
