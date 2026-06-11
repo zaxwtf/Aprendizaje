@@ -32,14 +32,14 @@ export const esFinDeSemana = (dia) => {
 // Devuelve true si el nombre tiene entre 3 y 15 caracteres, ambos incluidos.
 // Ejemplos: nombreValido("ana") -> true,  nombreValido("al") -> false
 export const nombreValido = (nombre) => {
-  
+  return nombre.length >=3 && nombre.length <= 15 ? true : false
 };
 
 // 5 · precioEnvio(total)
 // Devuelve el coste de envío: 0 si el total es 50 o más (envío gratis), y 5 si es menos.
 // Ejemplos: precioEnvio(50) -> 0,  precioEnvio(49) -> 5
 export const precioEnvio = (total) => {
-  // TODO
+
 };
 
 // 6 · totalCarrito(precio, cantidad)
