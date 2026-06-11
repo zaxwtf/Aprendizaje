@@ -19,7 +19,7 @@ export const nombreCompleto = (persona) => {
 // Ejemplos: esMayorDeEdad({ nombre: "Ana", edad: 18 }) -> true
 //           esMayorDeEdad({ nombre: "Leo", edad: 17 }) -> false
 export const esMayorDeEdad = (persona) => {
-  // TODO
+  return persona.edad >= 18 ? true : false
 };
 
 // 3 · presentacion(persona)
@@ -27,7 +27,7 @@ export const esMayorDeEdad = (persona) => {
 // Devuelve EXACTAMENTE el texto: "Hola, soy Ada y tengo 36 años"
 // Ejemplo: presentacion({ nombre: "Leo", edad: 10 }) -> "Hola, soy Leo y tengo 10 años"
 export const presentacion = (persona) => {
-  // TODO
+  return `Hola, soy ${persona.nombre} y tengo ${persona.edad} años`
 };
 
 // 4 · disponible(producto)
