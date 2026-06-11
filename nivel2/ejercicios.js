@@ -48,7 +48,7 @@ export const precioEnvio = (total) => {
 //   si es menos                 -> el subtotal + 5 de envío
 // Ejemplos: totalCarrito(20, 2) -> 45,  totalCarrito(20, 3) -> 60
 export const totalCarrito = (precio, cantidad) => {
-  // TODO
+  return precio * cantidad >= 50 ? precio * cantidad : precio * cantidad + 5
 };
 
 // 7 · inicialMayuscula(palabra)
