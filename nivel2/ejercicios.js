@@ -56,7 +56,7 @@ export const totalCarrito = (precio, cantidad) => {
 // Pista: la primera letra es palabra[0]; el resto es palabra.slice(1)
 // Ejemplos: inicialMayuscula("ada") -> "Ada",  inicialMayuscula("juan") -> "Juan"
 export const inicialMayuscula = (palabra) => {
-  // TODO
+  return `${palabra[0].toUpperCase()}${palabra.slice(1)}`
 };
 
 // 8 · soloPares(numeros)
