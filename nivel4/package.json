@@ -1,0 +1,12 @@
+{
+  "name": "diagnostico-logica-js-nivel4",
+  "version": "1.0.0",
+  "description": "Diagnóstico de lógica JS, nivel 4: cadenas de operaciones sobre arrays de objetos (media query de Mongo).",
+  "type": "module",
+  "scripts": {
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.8"
+  }
+}
