@@ -25,14 +25,14 @@ export const puedeVotar = (edad, esCiudadano) => {
 // Recibe el nombre de un día en minúsculas. Devuelve true si es "sábado" o "domingo".
 // Ejemplos: esFinDeSemana("sábado") -> true,  esFinDeSemana("lunes") -> false
 export const esFinDeSemana = (dia) => {
-  // TODO
+  return dia === "sábado" || dia === "domingo" ? true : false
 };
 
 // 4 · nombreValido(nombre)
 // Devuelve true si el nombre tiene entre 3 y 15 caracteres, ambos incluidos.
 // Ejemplos: nombreValido("ana") -> true,  nombreValido("al") -> false
 export const nombreValido = (nombre) => {
-  // TODO
+  
 };
 
 // 5 · precioEnvio(total)
