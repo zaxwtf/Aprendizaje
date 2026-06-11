@@ -80,7 +80,11 @@ export const buscarPorId = (productos, id) => {
 // Devuelve la suma de todos los precios. Un carrito vacío suma 0.
 // Ejemplo: totalCarrito([{ precio: 10 }, { precio: 20 }, { precio: 5 }]) -> 35
 export const totalCarrito = (productos) => {
-  // TODO
+  let precioTotal = 0
+  for(let i = 0; i < productos.length; i++){
+    precioTotal = precioTotal + productos[i].precio
+  }
+  return precioTotal
 };
 
 // 10 · nombresEnOferta(productos)
