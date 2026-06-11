@@ -77,5 +77,9 @@ export const dobles = (numeros) => {
 // Recibe un array de notas (0 a 10) y devuelve CUÁNTAS son 5 o más.
 // Ejemplos: cuentaAprobados([4, 5, 6, 9, 2]) -> 3,  cuentaAprobados([1, 2, 3]) -> 0
 export const cuentaAprobados = (notas) => {
-  // TODO
+  let contador = 0
+  notas.forEach(nota => {
+    return nota >= 5 ? contador += 1 : null
+  });
+  return contador
 };
