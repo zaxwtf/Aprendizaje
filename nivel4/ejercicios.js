@@ -45,7 +45,7 @@ export const usuarioMasJoven = (usuarios) => {
 // Pista: Math.max(...listaDeNumeros)
 // Ejemplo: precioMaximo([{ precio: 10 }, { precio: 30 }, { precio: 20 }]) -> 30
 export const precioMaximo = (productos) => {
-  // TODO
+  return Math.max(...productos.map(producto => producto.precio))
 };
 
 // 6 · hayMenores(usuarios)
