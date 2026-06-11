@@ -64,15 +64,16 @@ export const totalEnOferta = (productos) => {
   }, 0)
 };
 
-totalEnOferta([{ precio: 10, oferta: true }, { precio: 20, oferta: false }, { precio: 5, oferta: true }])
 // 8 · subirPrecios(productos, cantidad)
 // Devuelve un array NUEVO de productos, cada uno con su precio sumado en 'cantidad'.
 // Pista: para copiar un objeto cambiando un campo -> { ...producto, precio: nuevoPrecio }
 // Ejemplo: subirPrecios([{ nombre: "A", precio: 10 }], 5) -> [{ nombre: "A", precio: 15 }]
 export const subirPrecios = (productos, cantidad) => {
-  // TODO
+  return productos.map(producto => {
+    return {...producto, precio: producto.precio + cantidad}})
 };
 
+subirPrecios([{ nombre: "A", precio: 10 }], 5)
 // 9 · cuentaPorCategoria(productos)
 // Devuelve un OBJETO que cuenta cuántos productos hay de cada categoría.
 // Ejemplo: cuentaPorCategoria([{ categoria: "ropa" }, { categoria: "hogar" }, { categoria: "ropa" }])
