@@ -72,7 +72,7 @@ export const mayoresDeEdad = (personas) => {
 // Devuelve el primer producto cuyo id coincida. Si no hay ninguno, devuelve undefined.
 // Ejemplo: buscarPorId([{ id: 1 }, { id: 2 }], 2) -> { id: 2 }
 export const buscarPorId = (productos, id) => {
-  // TODO
+  return productos.find(producto => producto.id === id)
 };
 
 // 9 · totalCarrito(productos)
