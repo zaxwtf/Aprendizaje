@@ -92,5 +92,6 @@ export const totalCarrito = (productos) => {
 // Devuelve un array con los nombres SOLO de los que están en oferta.
 // Ejemplo: nombresEnOferta([{ nombre: "A", oferta: true }, { nombre: "B", oferta: false }]) -> ["A"]
 export const nombresEnOferta = (productos) => {
-  // TODO
+  const productosFiltrados = productos.filter(producto => producto.oferta === true)
+  return productosFiltrados.map(producto => producto.nombre)
 };
