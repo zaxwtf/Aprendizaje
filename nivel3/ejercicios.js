@@ -55,7 +55,7 @@ precioRebajado({precio: 50, oferta: true})
 // Devuelve un array con SOLO los nombres.
 // Ejemplo: nombres([{ nombre: "Ada" }, { nombre: "Leo" }]) -> ["Ada", "Leo"]
 export const nombres = (personas) => {
-  
+  return personas.map (persona => persona.nombre)
 };
 
 // 7 · mayoresDeEdad(personas)
